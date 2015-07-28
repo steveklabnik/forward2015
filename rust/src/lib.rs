@@ -26,6 +26,6 @@ pub extern fn rsdelete(_: *const Lol) -> i32 {
 }
 
 #[no_mangle]
-pub extern fn rsmatch(_: *const c_char) -> bool {
+pub extern fn rsmatch(_: *const Lol, _: *const c_char) -> bool {
     true
 }
