@@ -1,7 +1,8 @@
+#![feature(box_raw)]
+
 extern crate libc;
 extern crate regex;
 
-use std::mem;
 use libc::c_char;
 use std::ffi::CStr;
 use std::str;
@@ -18,11 +19,9 @@ pub extern fn rsnew(regex: *const c_char) -> *mut Regex {
     let str_slice: &str = str::from_utf8(buf).unwrap();
 
     let regex = Regex { regex: regex::Regex::new(str_slice).unwrap() };
-    let mut l = Box::new(regex);
-    let r = &mut *l as *mut _;
-    mem::forget(l);
+    let regex = Box::new(regex);
 
-    r
+    Box::into_raw(regex)
 }
 
 #[no_mangle]

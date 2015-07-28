@@ -16,7 +16,7 @@ console.log("done!");
 
 const RustRegex = require("../rsgex");
 
-var regex = RustRegex.new("/(a|b)*abb/");
+var regex = RustRegex.new("^(a|b)*abb$");
 
 assert.equal(RustRegex.match(regex, "abb"), true);
 assert.equal(RustRegex.match(regex, "aabb"), true);
