@@ -8,7 +8,7 @@ use std::ffi::CStr;
 use std::str;
 
 #[no_mangle]
-pub extern fn rsgex_new(regex: *const c_char) -> *const Lol {
+pub extern fn rsnew(regex: *const c_char) -> *const Lol {
     let c_str: &CStr = unsafe { CStr::from_ptr(regex) };
     let buf: &[u8] = c_str.to_bytes();
     let str_slice: &str = str::from_utf8(buf).unwrap();
@@ -21,11 +21,11 @@ pub extern fn rsgex_new(regex: *const c_char) -> *const Lol {
 }
 
 #[no_mangle]
-pub extern fn rsgex_delete(_: *const Lol) -> i32 {
+pub extern fn rsdelete(_: *const Lol) -> i32 {
     5
 }
 
 #[no_mangle]
-pub extern fn rsgex_match(_: *const c_char) -> bool {
+pub extern fn rsmatch(_: *const c_char) -> bool {
     true
 }

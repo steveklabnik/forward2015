@@ -14,16 +14,16 @@ console.log("done!");
 
 const RustRegex = require("../rsgex");
 
-var regex = RustRegex.rsgex.rsgex_new("/(a|b)*abb/");
+var regex = RustRegex.new("/(a|b)*abb/");
 
-RustRegex.rsgex.rsgex_match("abb");   // true 
-RustRegex.rsgex.rsgex_match("aabb");  // true 
-RustRegex.rsgex.rsgex_match("babb");  // true 
-RustRegex.rsgex.rsgex_match("aaabb"); // true 
-RustRegex.rsgex.rsgex_match("ababb"); // true 
-RustRegex.rsgex.rsgex_match("abba");  // false 
-RustRegex.rsgex.rsgex_match("cabb");  // false 
+RustRegex.match("abb");   // true 
+RustRegex.match("aabb");  // true 
+RustRegex.match("babb");  // true 
+RustRegex.match("aaabb"); // true 
+RustRegex.match("ababb"); // true 
+RustRegex.match("abba");  // false 
+RustRegex.match("cabb");  // false 
 
-RustRegex.rsgex.rsgex_delete(regex);
+RustRegex.delete(regex);
 
 console.log("done!");

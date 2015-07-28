@@ -4,10 +4,13 @@ var ffi = require('ffi');
 var rsgex = ref.types.void;
 var rsgexPtr = ref.refType(rsgex);
 
-module.exports = {
-  rsgex: ffi.Library('../rust/target/release/librsgex.so', {
-    'rsgex_new': [ rsgexPtr, [ 'string' ] ],
-    'rsgex_delete': [ 'int', [ rsgexPtr ] ],
-    'rsgex_match': [ 'bool', [ 'string']],
+var library = ffi.Library('../rust/target/release/librsgex.so', {
+    'rsnew': [ rsgexPtr, [ 'string' ] ],
+    'rsdelete': [ 'int', [ rsgexPtr ] ],
+    'rsmatch': [ 'bool', [ 'string']],
   })
+module.exports = {
+  new: library.rsnew,
+  delete: library.rsdelete,
+  match: library.rsmatch,
 };
