@@ -1,0 +1,23 @@
+{
+  "name": "js-rust-benchmark",
+  "version": "0.1.0",
+  "description": "benchmark js vs rust",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveklabnik/forward2015.git"
+  },
+  "author": "Ashley Williams <ashley666ashley@gmail.com> (http://ashleygwilliams.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveklabnik/forward2015/issues"
+  },
+  "homepage": "https://github.com/steveklabnik/forward2015#readme",
+  "dependencies": {
+    "benchmark": "^1.0.0",
+    "regex": "^0.1.1"
+  }
+}
