@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/steveklabnik/forward2015#readme",
   "dependencies": {
+    "chai": "^3.2.0",
     "regex": "^0.1.1"
   }
 }
