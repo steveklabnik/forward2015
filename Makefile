@@ -1,7 +1,3 @@
-default: rust
-	cd node && node index.js
-
-rust:
+default:
 	cd rust && cargo build --release
-
-
+	cd node && node index.js
