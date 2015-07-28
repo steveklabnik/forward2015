@@ -1,7 +1,7 @@
-default: rust/target/release/librsgex.so
+default: rust
 	cd node && node index.js
 
-rust/target/release/librsgex.so:
+rust:
 	cd rust && cargo build --release
 
 
