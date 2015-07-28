@@ -6,3 +6,6 @@ authors = ["Steve Klabnik <steve@steveklabnik.com>"]
 [lib]
 name = "rsgex"
 crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"
