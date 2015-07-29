@@ -2,7 +2,7 @@
 
 👋 👋 👋 @steveklabnik
 
-language =~ /^Ru/ 😎 😉 😅 
+language =~ /\^Ru/ 😎 😉 😅 
 
 <div style="text-align: center; margin-top: 120px">
 <img src="http://www.rust-lang.org/logos/rust-logo-256x256-blk.png">
@@ -39,12 +39,14 @@ Rust is a systems language focused on three things:
 * Speed
 * Concurrency
 
+```text
 Speed                          Safety
 Danger                         Slow
 Control                        No control
 
 <----------------------------------->
   C                Java        Ruby
+```
 
 # Rust
 
