@@ -55,10 +55,6 @@ checks to ensure safety, rather than runtime checks.
 
 Tradeoff: fighting with the compiler 😅 
 
-# Rust
-
-Let’s look at some code!
-
 # Ruby & Node
 
 Node is great.
@@ -66,6 +62,10 @@ Node is great.
 You don’t have to stop using Node to use Rust.
 
 You can write Node packages in Rust!
+
+# Rust
+
+Let’s look at some code!
 
 # Thanks Forward!
 
