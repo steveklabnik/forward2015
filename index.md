@@ -39,14 +39,14 @@ Rust is a systems language focused on three things:
 * Speed
 * Concurrency
 
-```text
+<pre><code>
 Speed                          Safety
 Danger                         Slow
 Control                        No control
 
 <----------------------------------->
   C                Java        Ruby
-```
+</code></pre>
 
 # Rust
 
