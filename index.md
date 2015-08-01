@@ -55,7 +55,7 @@ checks to ensure safety, rather than runtime checks.
 
 Tradeoff: fighting with the compiler 😅 
 
-# Ruby & Node
+# Rust & Node
 
 Node is great.
 
