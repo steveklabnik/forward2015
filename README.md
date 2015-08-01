@@ -21,11 +21,4 @@ This repository contains 3 interwoven projects:
 $ git clone git@github.com:steveklabnik/forward2015.git
 $ cd forward2015 
 $ make
-$ cd rust
-$ cargo install
-$ cd ../rsgex
-$ npm install
-$ cd ../node
-$ npm install
-$ node index
 ```
