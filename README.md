@@ -15,7 +15,7 @@ This repository contains 3 interwoven projects:
 - Rust [(download)](http://www.rust-lang.org/)
 - Node [(download)](https://nodejs.org/)
 
-# Up and Running
+## Up and Running
 
 ```bash
 $ git clone git@github.com:steveklabnik/forward2015.git
